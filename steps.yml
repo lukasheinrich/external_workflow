@@ -1,0 +1,10 @@
+step_external:
+  process:
+    process_type: string-interpolated-cmd
+    cmd: echo EXTERNAL > {input} 
+  environment:
+    environment_type: localproc-env
+  publisher:
+    publisher_type: 'constant-pub'
+    publish:
+      outputA: 'output'
